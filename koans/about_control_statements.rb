@@ -90,16 +90,16 @@ class AboutControlStatements < Neo::Koan
     assert_equal 3628800, result
   end
 
-  #def test_break_statement
-  #  i = 1
-  #  result = 1
-  #  while true
-  #    break unless i <= 10
-  #    result = result * i
-  #    i += 1
-  #  end
-  #  assert_equal 3628800, result
-  #end
+  def test_break_statement
+    i = 1
+    result = 1
+    while true
+      break unless i <= 10
+      result = result * i
+      i += 1
+    end
+    assert_equal 3628800, result
+  end
 
   def test_break_statement_returns_values
     i = 1
@@ -131,12 +131,11 @@ class AboutControlStatements < Neo::Koan
     assert_equal ["FISH", "AND", "CHIPS"], result
   end
 
-  #def test_times_statement
-  #  sum = 0
-  #  10.times do
-   #   sum += 1
-    #end
-    #assert_equal 10, sum
-  #end
-
+  def test_times_statement
+    sum = 0
+    10.times do
+      sum += 1
+    end
+    assert_equal 10, sum
+  end
 end
